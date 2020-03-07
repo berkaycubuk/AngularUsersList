@@ -1,2 +1,3 @@
-# AngularUsersList
-Simple Angular application to list users using API
+# Angular Users List App
+
+You can list users from API
