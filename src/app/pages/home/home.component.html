@@ -1,1 +1,8 @@
 <h1>{{ title }}</h1>
+
+<ul *ngIf="data" class="list">
+    <li *ngFor="let user of data.data" class="list-item">
+        <img [src]="user.avatar" class="item-image">
+        <p class="item-text">{{ user.first_name }} {{ user.last_name }}</p>
+    </li>
+</ul>

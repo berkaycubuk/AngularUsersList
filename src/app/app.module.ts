@@ -9,6 +9,8 @@ import { UserComponent } from './pages/user/user.component';
 import { AboutComponent } from './pages/about/about.component';
 import { TextComponent } from './layout/footer/text/text.component';
 
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { TextComponent } from './layout/footer/text/text.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

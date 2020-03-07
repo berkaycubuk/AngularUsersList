@@ -8,12 +8,16 @@ import { UsersService } from "../../data/users.service";
 })
 export class HomeComponent implements OnInit {
 
-  title: string = 'Home Title';
+  title: string = 'Users List';
+
+  data: Object;
 
   constructor(private users: UsersService) { }
 
   ngOnInit(): void {
-
+    this.users.getUsers().subscribe(users => {
+      this.data = users
+    });
   }
 
 }
