@@ -1,7 +1,7 @@
 <h1>{{ title }}</h1>
 
 <ul *ngIf="data" class="list">
-    <li *ngFor="let user of data.data" class="list-item">
+    <li *ngFor="let user of data.data" class="list-item" [routerLink]="['/user', user.id]">
         <img [src]="user.avatar" class="item-image">
         <p class="item-text">{{ user.first_name }} {{ user.last_name }}</p>
     </li>

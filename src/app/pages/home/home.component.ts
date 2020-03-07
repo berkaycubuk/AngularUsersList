@@ -10,12 +10,12 @@ export class HomeComponent implements OnInit {
 
   title: string = 'Users List';
 
-  data: Object;
+  data;
 
   constructor(private users: UsersService) { }
 
   ngOnInit(): void {
-    this.users.getUsers().subscribe(users => {
+    this.users.getUsers(1).subscribe(users => {
       this.data = users
     });
   }

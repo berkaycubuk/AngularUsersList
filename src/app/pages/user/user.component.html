@@ -1,1 +1,12 @@
-<p>user works!</p>
+<h2>{{ data.data.first_name }}'s Profile</h2>
+
+<div class="user">
+    <div class="user-left">
+        <img [src]="data.data.avatar" class="user-image">
+    </div>
+    <div class="user-right">
+        <p class="user-details"><strong>First Name:</strong> {{ data.data.first_name }}</p>
+        <p class="user-details"><strong>Last Name:</strong> {{ data.data.last_name }}</p>
+        <p class="user-details"><strong>E-mail:</strong> {{ data.data.email }}</p>
+    </div>
+</div>
