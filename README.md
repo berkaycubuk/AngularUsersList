@@ -1,6 +1,6 @@
 # Angular Users List App
 
-You can list users from API
+You can list users using reqres.in API
 
 ## Screenshots
 
