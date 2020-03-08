@@ -1,0 +1,30 @@
+.user-card
+    display: grid
+    grid-template-columns: 80px auto
+    padding: 10px
+    margin: 10px 0
+    background-color: #f5f5f5
+    border-radius: 4px
+    transition: all 0.2s
+
+    &:hover
+        cursor: pointer
+        margin: 20px 0
+        background-color: #eee
+        -webkit-box-shadow: 8px 8px 12px -3px rgba(0,0,0,0.40)
+        -moz-box-shadow: 8px 8px 12px -3px rgba(0,0,0,0.40)
+        box-shadow: 8px 8px 12px -3px rgba(0,0,0,0.40)
+
+        .user-card-image
+            filter: grayscale(90%)
+
+.user-card-image
+    width: 100%
+    border-radius: 50%
+    transition: filter 0.2s
+
+.user-card-name
+    margin: 28px
+    font-size: 20px
+    font-weight: bold
+    color: #444

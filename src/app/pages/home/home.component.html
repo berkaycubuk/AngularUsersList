@@ -1,8 +1,5 @@
 <h1>{{ title }}</h1>
 
-<ul *ngIf="data" class="list">
-    <li *ngFor="let user of data.data" class="list-item" [routerLink]="['/user', user.id]">
-        <img [src]="user.avatar" class="item-image">
-        <p class="item-text">{{ user.first_name }} {{ user.last_name }}</p>
-    </li>
-</ul>
+<div *ngIf="data">
+    <app-user-card *ngFor="let user of data.data" [userImage]="user.avatar" [userName]="user.first_name" [userLastName]="user.last_name" [routerLink]="['/user', user.id]"></app-user-card>
+</div>

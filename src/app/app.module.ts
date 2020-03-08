@@ -10,6 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { TextComponent } from './layout/footer/text/text.component';
 
 import { HttpClientModule } from "@angular/common/http";
+import { UserCardComponent } from './layout/main/user-card/user-card.component';
+import { UserCardLgComponent } from './layout/main/user-card-lg/user-card-lg.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HttpClientModule } from "@angular/common/http";
     HomeComponent,
     UserComponent,
     AboutComponent,
-    TextComponent
+    TextComponent,
+    UserCardComponent,
+    UserCardLgComponent
   ],
   imports: [
     BrowserModule,
